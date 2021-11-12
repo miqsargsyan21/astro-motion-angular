@@ -1,0 +1,50 @@
+<div id="headOfSite">
+    <div id="divOfTitle">
+        <p id="titleOfHeader">Astro Motion</p>
+    </div>
+    <div class="tab" id="tabID">
+        <div class="tablinks active">
+            <a [routerLink]="'/home'" routerLinkActive = "active-menu-item"><button>Home</button></a>
+            <div class="circleOfButton" id="circle1"></div>
+        </div>
+        <div class="tablinks">
+            <a [routerLink]="'/gallery'" routerLinkActive = "active-menu-item"><button>Gallery</button></a>
+            <div class="circleOfButton" id="circle2"></div>
+        </div>
+        <div class="tablinks">
+            <a [routerLink]="'/about'" routerLinkActive = "active-menu-item"><button>About</button></a>
+            <div class="circleOfButton" id="circle3"></div>
+        </div>
+        <div class="tablinks">
+            <a [routerLink]="'/contact'" routerLinkActive = "active-menu-item"><button>Contact</button></a>
+            <div class="circleOfButton" id="circle4"></div>
+        </div>
+    </div>
+    <div class="tab" id="tab-responsive">
+        <ul>
+            <li class="tablinks" id="link-menu">Menu
+                <div class="circleOfButton-r" id="circle-r-home"></div>
+            </li>
+            <a [routerLink]="'/home'" routerLinkActive = "active-menu-item">
+            <li class="tablinks active hidden-links">Home
+                <div class="circleOfButton-r" id="circle-r1"></div>
+            </li>
+            </a>
+            <a [routerLink]="'/gallery'" routerLinkActive = "active-menu-item">
+            <li class="tablinks hidden-links">Gallery
+                <div class="circleOfButton-r" id="circle-r2"></div>
+            </li>
+            </a>
+            <a [routerLink]="'/about'" routerLinkActive = "active-menu-item">
+            <li class="tablinks hidden-links">About
+                <div class="circleOfButton-r" id="circle-r3"></div>
+            </li>
+            </a>
+            <a [routerLink]="'/contact'" routerLinkActive = "active-menu-item">
+            <li class="tablinks hidden-links">Contact
+                <div class="circleOfButton-r" id="circle-r4"></div>
+            </li>
+            </a>
+        </ul>
+    </div>
+</div>
